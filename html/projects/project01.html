@@ -4,10 +4,17 @@
         <title>Rezume</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
-        <!-- font-family: 'Nunito Sans', sans-serif; -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Playfair:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+        <!-- font-family: 'Nunito Sans', sans-serif;
+        font-family: 'Playfair', serif; -->
         <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+           
             .properties{
+                
                 background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../projects/image_1.jpg.webp');
                 background-repeat: no-repeat;
                 background-size:cover; 
@@ -20,32 +27,123 @@
                 font-size: 100px; 
                 color: white;
                 padding-top: 30%;
-                
+               
             }
             h2{
                 text-align: center;
                 color: white;
-                font-size: 130px;
-                line-height: 16%;
+                font-size: 135px;
+                /* line-height: 14%; */
                 font-family: 'Nunito Sans', sans-serif;
             }
             h3{
                 text-align: center;
                 font-family:'Courier New', Courier, monospace;
                 color: rgb(180, 183, 185);
-                font-size: 40px;
+                font-size: 34px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+                letter-spacing: 5px;
+            }
+            section{
+                background-color: black;
+               
+            }
+            .items{
+                list-style: none;
+                float: left;
+                margin-left: 29%;
+                margin-top: 13%;
+                
+               
+            }
+            li{
+                display: inline;
+                
+
+            }
+            li a{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500px;
+                text-decoration: none;
+                color: rgb(241, 239, 239);
+                padding-left: 100px;
+                font-size: 30px
+            }
+            .functions{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 100px;
                 
             }
-            
+            .functions h3{
+                padding-top: 10%;
+                font-size: 50px;
+                letter-spacing: 1px;
+            }
+            .functions h3 .font{
+                font-weight: 900;
+            }
+            .works{
+                
+                margin-left: 30%;
+                padding-top: 4.5%;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+            .work_1{
+                font-size: 10%;
+            }
+       
         </style>
     </head>
     <body>
+        <nav>
+            <ul>
+                <div class="items">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">RESUME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </div>
+            </ul>
+        </nav>
         
         <div class="properties">
             <h1>Hello, I'm</h1>
             <h2>Charles Anderson</h2>
             <h3>AND THIS IS MY REZUME</h3>
         </div>
+        <section>
+            <div class="functions">
+                <h3 class="heading">Featured <span class="font">Portfolio</span></h3>
+            </div>
+            <ul>
+                <div class="works">
+                    <li class="work_1"><a href="#">All</a></li>
+                    <li class="work_1"><a href="#">Packaging</a></li>
+                    <li class="work_1"><a href="#">Mockup</a></li>
+                    <li class="work_1"><a href="#">Typography</a></li>
+                    <li class="work_1"><a href="#">Photography</a></li>
 
+                </div>
+            </ul>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
     </body>
 </html>
